@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { load } from "./page";
+    import { load } from "./+page";
 
     const data = load();
     const projects = data.projects;
