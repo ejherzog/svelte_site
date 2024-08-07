@@ -1,0 +1,27 @@
+{
+    "projects": [
+        {
+            "title": "🦉 HOOT",
+            "subtitle": "Give a HOOT about your health!",
+            "image": "images/hoot_variables.png",
+            "description": "HOOT is a symptom- and habit-tracking web app. It allows users to customize the variables they monitor and to display their data in meaningful graphs. It is designed to run on a Raspberry Pi or similar device connected to the user's home internet ensuring that their data is their own.",
+            "github": "https://github.com/ejherzog/hoot_demo",
+            "live": "https://hoot.ngrok.dev/"
+        },
+        {
+            "title": "🎵 SONG SRCHR 🔎",
+            "subtitle": "Personal Spotify Library Search",
+            "image": "images/songsrchr_title.png",
+            "description": "I'm constantly crafting new playlists, many of which have a theme. I wanted a tool that allowed me to more easily search my own song library in Spotify.</p><p>The first features I implemented are searching by keyword in song titles and searching by song duration. In one case, this helped me find candidates for an 'abbreviated' playlist where every track is under 2 minutes long.",
+            "github": "https://github.com/ejherzog/srchr"
+        },
+        {
+            "title": "ConfyScratchy",
+            "subtitle": "Group Discussion Tool for Educators",
+            "image": "images/confyscratchy_design.png",
+            "description": "<b>Confidence Report</b>: For a question with N choices, each student has a budget of N points to distribute among them. Their score is how many points were allotted to the correct answer.</p><p><b>Scratch Card</b>: A small group discusses each question and decides which answer choice to 'scratch' first. If correct, their score is equal to the number of answer choices. Otherwise, the group can scratch another answer for fewer points until the correct answer is found.",
+            "github": "https://github.com/aacooper85/confyscratchy",
+            "live": "https://confyscratchy-zeta.vercel.app/"
+        }
+    ]
+}
