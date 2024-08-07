@@ -3,12 +3,26 @@
 
     const data = load();
     const projects = data.projects;
+    const reviews = data.reviews;
 
     const colors = [
         "rgba(238, 220, 229, 0.3);",
         "rgba(238, 230, 202, 0.3);",
         "rgba(202, 238, 217, 0.3);"
-    ]
+    ];
+
+    let color = (index: number) => {
+        return colors[index % colors.length];
+    }
+
+    import { onMount } from "svelte";
+    let MacyComponent: typeof import("svelte-macy");
+
+    onMount(async () => {
+        MacyComponent = (await import("svelte-macy")).Macy;
+    });
+
+    let macy: any;
 </script>
 
 <div class="container mt-2 mx-auto col-sm-11 col-lg-9">
@@ -18,6 +32,24 @@
             <i class="px-1 fa fa-linkedin-square text-decoration-none fs-3" aria-hidden="true"></i></a>
         <a href="https://github.com/ejherzog" target="_blank" class="text-reset">
             <i class="px-1 fa fa-github-square text-decoration-none fs-3" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="shadow p-3 mb-3 bg-white rounded">
+        <div class="pt-1 pb-1 text-center text-black">
+            <h5>Reviews & Feedback</h5>
+        </div>
+        <svelte:component this="{MacyComponent}" bind:macy options="{{ columns: 3, breakAt: { 900: { columns: 2 }, 600: { columns: 1 }}}}">
+            {#each reviews as review, index}
+                <div class="mb-4 p-2">
+                    <div class="card border-0 text-dark shadow-sm" style={`background-color: ${color(index)}`}>
+                        <div class="card-body">
+                            <p class="card-text">{@html review.detail}</p>
+                            <p class="card-text text-end text-muted fst-italic"><small>{@html review.source}</small></p>
+                        </div>
+                    </div>
+                </div>
+                {/each}
+        </svelte:component>
     </div>
 
     <div class="shadow p-3 mb-3 bg-white rounded">
