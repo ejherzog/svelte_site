@@ -1,0 +1,44 @@
+{
+    "reviews": [
+        {
+            "detail": "I am always impressed with your ability to articulate problems and solutions.",
+            "source": "2nd-Level Manager"
+        },
+        {
+            "detail": "I'm fascinated by the amount of impact you make in the teams that you worked on, your in depth knowledge and you[r] strive for perfection in everything you do.",
+            "source": "Engineering Teammate"
+        },
+        {
+            "detail": "You communicate so clearly and effectively, a product manager's dream! You are a natural leader.",
+            "source": "Product Owner"
+        },
+        {
+            "detail": "It has been a pleasure cause you are a very competent and friendly person. Thank you for your guidance in the intricacies of [the middleware service] and for all your support to the entire client team.",
+            "source": "Client Team Engineer"
+        },
+        {
+            "detail": "Every time someone on [my] team works with you - they always compliment.",
+            "source": "Manager<br>(whose team inherited our service)"
+        },
+        {
+            "detail": "",
+            "source": ""
+        },
+        {
+            "detail": "",
+            "source": ""
+        },
+        {
+            "detail": "",
+            "source": ""
+        },
+        {
+            "detail": "",
+            "source": ""
+        },
+        {
+            "detail": "",
+            "source": ""
+        }
+    ]
+}
